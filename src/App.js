@@ -1,11 +1,16 @@
 import './App.css';
-import ListeEleves from './ListeEleves';
+import LeftMenu from './Components/LeftMenu';
+import Header from './Components/Header';
+import Main from './Components/Main/Main';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Liste des Élèves</h1> 
-      <ListeEleves />
+    <div style={{ display: 'flex', height: '100vh' }}>
+            <LeftMenu />
+            <div style={{ flex: 1 }}>
+                <Header />
+                <Main />
+            </div>
     </div>
   );
 }
